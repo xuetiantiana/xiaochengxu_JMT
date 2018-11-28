@@ -1,0 +1,115 @@
+<!--pages/cpage/edit_baseInfor/edit_baseInfor.wxml-->
+<view class="container">
+  <view>
+    <view class='input_box'>
+      <view>
+        <view class="left">姓名</view>
+        <view class="right">
+          <input type="text" value='薛甜甜' placeholder='请输入您的姓名'/>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">性别</view>
+        <view class="right">
+          <picker bindchange="sexPickerChange" value="{{sex_index}}" range="{{sex_array}}">
+            <view class="picker">
+              {{sex_array[sex_index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">出生年月</view>
+        <view class="right">
+          <picker mode="date" value="{{birth}}"  bindchange="birthDateChange">
+            <view class="picker">
+              {{birth}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">电话</view>
+        <view class="right">
+          <input type="number" value='' placeholder='请输入您的手机号码'/>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">邮箱</view>
+        <view class="right">
+          <input type="number" value='' placeholder='请输入您的邮箱'/>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">最高学历</view>
+        <view class="right">
+          <picker bindchange="topeduPickerChange" value="{{topedu_index}}" range="{{topedu_array}}">
+            <view class="picker">
+              {{topedu_array[topedu_index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">工作年限</view>
+        <view class="right">
+          <picker bindchange="worktimePickerChange" value="{{worktime_index}}" range="{{worktime_array}}">
+            <view class="picker">
+              {{worktime_array[worktime_index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">婚姻状况</view>
+        <view class="right">
+          <picker bindchange="marriagePickerChange" value="{{marriage_index}}" range="{{marriage_array}}">
+            <view class="picker">
+              {{marriage_array[marriage_index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">海外学习/工作经验</view>
+        <view class="right">
+          <picker bindchange="foreignPickerChange" value="{{foreign_index}}" range="{{foreign_array}}">
+            <view class="picker">
+              {{foreign_array[foreign_index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">现居城市</view>
+        <view class="right">
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+            <view class="picker">
+              {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="submit" type="primary" size="default" loading="true"
+        disabled="{{disabled}}" bindtap="default" hover-class="none"> 保存</button>
+</view>

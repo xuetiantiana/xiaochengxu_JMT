@@ -1,0 +1,59 @@
+/**app.wxss**/
+page{height: 100%;background: #f5f5f5}
+.container {
+  min-height: 100%;
+} 
+.container,input,button{
+  color:#666;
+  font-size: 28rpx;
+  font-family: "微软雅黑",Microsoft Yahei,PingFangSC-Regular,PingFang SC,Lantinghei SC,Helvetica Neue,Helvetica,Arial
+}
+.job_ul .job_li{
+  display: flex;flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content:space-around;
+  align-items:center;
+  padding:10rpx 30rpx 10rpx 10rpx;
+  background: #fff;
+  margin:15rpx 15rpx 0;
+  border-radius: 5px;
+}
+.job_ul .job_li image{width: 140rpx}
+.job_ul .job_li .li_left{
+  width: 27%;
+}
+.job_ul .job_li .li_center{
+  width: 63%;
+  line-height: 1.8;
+  color:#666;
+}
+.job_ul .job_li .li_center .job_name{font-size: 32rpx;color:#000}
+.job_ul .job_li .li_center view{
+  font-size: 24rpx;
+  margin-bottom:2rpx
+}
+.job_ul .job_li .li_center view text{border:1px solid #eee;margin-right: 20rpx;padding:0rpx 15rpx;border-radius: 18rpx;}
+.job_ul .job_li .li_right{
+  width: 20%;
+  text-align: right;
+  color:red;
+  font-size: 32rpx
+}
+.job_ul .job_li .li_right .time{color:#999;font-size: 24rpx;margin-top:50rpx}.loadMore{color:#999;text-align: center;padding:20rpx 0}
+/* 简历表单样式 */
+.input_box{background: #fff;line-height: 90rpx;padding:0 30rpx}
+.input_box > view{border-bottom:1px solid #f5f5f5;display: flex;flex-direction: row;flex-wrap: nowrap}
+.input_box_1{padding:0}
+.input_box_1 > view{display: block;}
+.input_box_1 > view .left{background: #f5f5f5;width: 100%!important;padding:0 30rpx}
+.input_box_1 > view  .bottom{padding:20rpx 30rpx 10rpx;width: 100%!important;text-align: left;box-sizing: border-box}
+.input_box_1 > view  .bottom textarea{line-height: 1;width: 100%;}
+.input_box > view .left{width: 40%;font-size: 32rpx;color:#333}
+.input_box > view .right{width: 60%;text-align: right}
+.input_box > view input{height: 100%;text-align: right}
+.submit{border-radius:10rpx;text-align: center;margin:60rpx auto 0;width: 90%;background: #00a185!important;border:none!important;color:#fff!important;font-size: 32rpx;line-height: 2.8}
+.del{margin:20rpx auto;width: 90%;background: none!important;border:none!important;color:#666!important;font-size: 32rpx;line-height: 2.8}
+.input_box > view checkbox-group{line-height: 1}
+.input_box > view checkbox-group label{margin:0 30rpx 20rpx 0;display: inline-block}
+.input_box:nth-child(1){margin-top:2rpx}
+/* .input_box > view checkbox-group checkbox{width: 30rpx;height: 30rpx} */

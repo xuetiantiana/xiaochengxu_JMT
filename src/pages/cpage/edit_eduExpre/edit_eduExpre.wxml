@@ -1,0 +1,78 @@
+<!--pages/cpage/edit_eduExpre/edit_eduExpre.wxml-->
+<!--pages/cpage/edit_workExper/edit_workExper.wxml-->
+<!--pages/cpage/edit_jobIntention/edit_jobIntention.wxml-->
+<view class="container">
+  <view>
+    <view class='input_box'>
+      <view>
+        <view class="left">是否统招</view>
+        <view class="right">
+          
+          <picker bindchange="eduifPickerChange" value="{{eduif_index}}" range="{{eduif_array}}">
+            <view class="picker">
+              {{eduif_array[eduif_index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">毕业院校</view>
+        <view class="right">
+          <input type="text" value='毕业院校' placeholder='请输入毕业院校'/>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">学历类型</view>
+        <view class="right">
+          
+          <picker bindchange="eduTypePickerChange" value="{{eduType_index}}" range="{{eduType_array}}">
+            <view class="picker">
+              {{eduType_array[eduType_index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">专业名称</view>
+        <view class="right">
+          <input type="text" value='专业名称' placeholder='请输入专业名称'/>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">开始时间</view>
+        <view class="right">
+          <picker mode="date" value="{{startTime}}"  bindchange="startTimeChange" end="{{startTimeMax}}">
+            <view class="picker">
+              {{startTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">结束时间</view>
+        <view class="right">
+          <picker mode="date" value="{{endTime}}"  bindchange="endTimeChange" start="{{endTimeMin}}">
+            <view class="picker">
+              {{endTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="submit" type="primary" size="default" loading="true"
+        disabled="{{disabled}}" bindtap="default" hover-class="none"> 保存  </button>
+        <button class="del" type="default" size="default"
+        disabled="{{disabled}}" bindtap="default" hover-class="none">删除  </button>
+</view>
+

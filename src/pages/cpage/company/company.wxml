@@ -1,0 +1,85 @@
+<!--pages/cpage/company/company.wxml-->
+<!--pages/cpage/jobDetail/jobDetail.wxml-->
+<view class='container'>
+  <view class="jobBox">
+    <view class="jobBox_item jobBox_1">
+      <view class="company">
+        <view class='company_left'><image src='https://cdn.jiemodui.com/img/Public/Uploads/Edit/2017/08/371903865ac21f723657f4ce9ae58058.jpg' mode="widthFix"></image></view>
+        <view class='company_right'>
+          <navigator url="/pages/cpage/jobDetail/jobDetail" hover-class="none">
+            <view>北京前程未来科技有限公司</view>
+            <view>互联网/50-150人/已上市</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class='jobBox_item jobBox_2'>
+      <view class="jobIntro_ul">
+        <view class='jobIntro_li'>
+          <view class='tit_'>公司简介</view>
+          <view class='content_'>
+            <view>公司全名：上海风创信息咨询有限公司</view>
+            <view>公司slogan：海风教育已进行完C轮融资，预计上市</view>
+            <view>公司介绍：海风教育创立于2010年，是国内知名的中小学生真人在线1对1辅导平台。海风教育始终专注为每个学生订制专属学习方案，严选超万名985/211等高校背景老师，独创5000+“知识切片”教学体系，更斥资过亿
+            </view>
+
+
+
+          </view>
+        </view>
+        <view class='jobIntro_li'>
+          <view class='tit_'>公司福利</view>
+          <view class='content_'>◆ 办理养老、医疗等五项社会保险、住房公积金
+◆ 补充性商业医疗保险
+◆ 带薪年休假及教师福利假
+◆ 集体旅游（每年至少一次长途旅游）
+◆ 免费年度体检
+◆ 员工关爱计划
+          </view>
+        </view>
+       
+        <view class='jobIntro_li'>
+          <view class='tit_'>工作地点</view>
+          <view class='content_'>
+            <view>福田区彩田路平安国际酒店27楼 <text class="goMap" bindtap='openMap'>查看地图</text></view>
+          </view>
+        </view>
+       
+      </view>
+    </view>
+    <view class='jobBox_item job_Box'>
+      <view class="tit">在招职位（4）</view>
+      <view class='tab_job'>
+        <text class="tab_span on">全部</text>
+        <text class="tab_span">技术研发</text>
+        <text class="tab_span">技术研发</text>
+        <text class="tab_span">技术研发</text>
+      </view>
+       <view class="job_ul">
+      <block wx:for="{{jobList}}">
+      <navigator  url="/pages/cpage/jobDetail/jobDetail" hover-class="none">
+        <view class="job_li" style="">
+          <view class="li_left">
+            <image src="{{item.img}}" mode="widthFix" ></image>
+          </view>
+          <view class="li_center">
+            <view class="job_name">web前端</view>
+            <view>北京前程未来有限公司</view>
+            <view class="">
+              <text>北京</text><text>3-5年</text><text>本科</text>
+            </view>
+          </view>
+          <view class="li_right">
+            <view>10k-15k</view>
+            <view class="time">4天前</view>
+          </view>
+        </view>
+      </navigator>
+      </block>
+    </view>
+    
+    </view>
+  </view>
+  <view class="loadMore">加载更多</view>
+</view>
+

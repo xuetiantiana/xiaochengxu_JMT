@@ -1,0 +1,2 @@
+<!--pages/cpage/webview/webview.wxml-->
+<web-view src="/Users/xuetiantian/Documents/uploadFile.html"></web-view>

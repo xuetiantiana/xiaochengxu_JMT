@@ -1,0 +1,15 @@
+<!--pages/cpage/login/login.wxml-->
+<view class='container'>
+  <view class="lognTit">登录芥末推账号</view>
+  <view>
+    <view class='input_'>
+      <input placeholder='请输入您的手机号码' bindinput="teleInput"></input>
+    </view>
+    <view class='input_'>
+      <input placeholder='请输入验证码' bindinput="telCodeInput"></input>
+      <view class="getTelCode" bindtap='getTelCode'>获取验证码</view>
+    </view>
+    <view class="login1 submit" bindtap='loginFunction'>登录</view>
+    <button class="login2 submit" open-type="getPhoneNumber" bindgetphonenumber='bindgetphonenumber'>微信一键授权登录</button>
+  </view>
+</view>

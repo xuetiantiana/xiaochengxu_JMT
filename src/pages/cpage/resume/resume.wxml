@@ -1,0 +1,133 @@
+<!--pages/cpage/resume/resume.wxml-->
+<view class='container'>
+  <view class="resumeUl">
+    <!-- 基本信息 -->
+    <view class="resumeLi baseInformation">
+      <view class="pic" bindtap="choseImg"><image src="{{imgPic}}" mode='widthFix' style="width:140rpx"></image></view>
+      <view class="name">薛甜甜  
+        <text>女 / 未婚</text>
+        <navigator class="green" url="/pages/cpage/edit_baseInfor/edit_baseInfor" hover-class="none"><text>编辑</text></navigator>
+      </view>
+      <view>4年工作经验 / 本科 / 17岁 / 北京城区</view>
+      <view class="iconText phone">15911152373</view>
+      <view class="iconText email">15911152373@163.com</view>
+    </view>
+    <!-- 基本信息end -->
+    <!-- 求职意向 -->
+    <view class='resumeLi'>
+      <view class='tit'>求职意向<navigator class="green" url="/pages/cpage/edit_jobIntention/edit_jobIntention" hover-class="none"><text >编辑</text></navigator></view>
+      <view class="content">
+        <view>技术研发 北京 30-50K 兼职 随时到岗 / 已离职，可快速上班</view>
+      </view>
+    </view>
+    <!-- 求职意向end -->
+    <!-- 自我描述 -->
+    <view class='resumeLi'>
+      <view class='tit'>自我描述<navigator class="green" url="/pages/cpage/edit_introMyself/edit_introMyself" hover-class="none"><text >编辑</text></navigator></view>
+      <view class="content">
+        <view>1、熟练掌握HTML5和Css3
+          2、精通javascript
+          3、精通Ajax,完成数据交互
+          4、精通响应式布局和弹性盒，兼容多个终端。
+          5、熟练掌握Bootstrap和ace等框架的使用。
+          6、熟练使用微信小程序API进行微信小程序开发。
+          7、熟练掌握Jquery，zepto，swiper，iscroll，jq-waterfall等
+          8、熟悉 vue+webpack+element-UI实现模块化开发
+        </view>
+      </view>
+    </view>
+    <!-- 自我描述end -->
+    <!-- 工作经历 -->
+    <view class='resumeLi'>
+      <view class='tit'>工作经历</view>
+      <view class="content">
+        <view class="ul_">
+          <view class="li_">
+            <view>公司名称 <navigator class="green" url="/pages/cpage/edit_workExper/edit_workExper" hover-class="none"><text >编辑</text></navigator></view>
+            <view>职位名称/岗位类型/职位名称</view>
+            <view>地点/时间</view>
+            <view>工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容</view>
+          </view>
+        </view>
+      </view>
+      <view class="add">
+        <text>添加工作经历</text>
+      </view>
+    </view>
+    <!-- 工作经历end -->
+    <!-- 项目经历 -->
+    <view class='resumeLi'>
+      <view class='tit'>项目经历</view>
+      <view class="content">
+        <view class="ul_">
+          <view class="li_">
+            <view>项目名称 <navigator class="green" url="/pages/cpage/edit_progectExpre/edit_progectExpre" hover-class="none"><text >编辑</text></navigator></view>
+            
+            <view>地点/时间</view>
+            <view>项目职责</view>
+            <view>项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述</view>
+          </view>
+        </view>
+      </view>
+      <view class="add">
+        <text>添加项目经历</text>
+      </view>
+    </view>
+    <!-- 项目经历end -->
+    <!-- 教育经历 -->
+     <view class='resumeLi'>
+      <view class='tit'>教育经历</view>
+      <view class="content">
+        <view class="ul_">
+          <view class="li_">
+            <view>学校名称统招 <navigator class="green" url="/pages/cpage/edit_eduExpre/edit_eduExpre" hover-class="none"><text >编辑</text></navigator></view>
+            <view>/本科/计算机科学与技术啊/时间</view>
+          </view>
+        </view>
+      </view>
+      <view class="add">
+        <text>添加教育经历</text>
+      </view>
+    </view>
+    <!-- 教育经历end -->
+    <!-- 技能评价 -->
+     <view class='resumeLi'>
+      <view class='tit'>技能评价</view>
+      <view class="content">
+        <view class="ul_">
+          <view class="li_">
+            <view></view>
+            <view class="precent">
+              <text style='' class="titName">html css</text>
+              <slider value='50' bindchange="slider2change" step="5" block-size="12" style='' block-color="#f5f5f5" disabled='disabled'/>
+              <text>熟练</text>
+              <navigator class="green" url="/pages/cpage/edit_skill/edit_skill" hover-class="none"><text >编辑</text></navigator>
+            </view>
+          </view>
+          <view class="li_">
+            <view></view>
+            <view class="precent">
+              <text style='' class="titName">html css</text>
+              <slider value='50' bindchange="slider2change" step="5" block-size="12" style='' block-color="#f5f5f5" disabled='disabled'/>
+              <text>熟练</text>
+              <navigator class="green" url="/pages/cpage/edit_skill/edit_skill" hover-class="none"><text >编辑</text></navigator>
+            </view>
+          </view>
+          <view class="li_">
+            <view></view>
+            <view class="precent">
+              <text style='' class="titName">html css</text>
+              <slider value='50' bindchange="slider2change" step="5" block-size="12" style='' block-color="#f5f5f5" disabled='disabled'/>
+              <text>熟练</text>
+              <navigator class="green" url="/pages/cpage/edit_skill/edit_skill" hover-class="none"><text >编辑</text></navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="add">
+        <text>添加技能评价</text>
+      </view>
+    </view>
+    <!-- 技能评价end -->
+  </view>
+</view>

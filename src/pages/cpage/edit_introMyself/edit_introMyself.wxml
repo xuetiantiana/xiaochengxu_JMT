@@ -1,0 +1,16 @@
+<!--pages/cpage/edit_introMyself/edit_introMyself.wxml-->
+<view class="container">
+  <view>
+    <view class='input_box input_box_1'>
+      <view>
+        <view class="left">自我描述</view>
+        <view class="bottom">
+          <textarea placeholder="请输入自我描述" placeholder-style="color:#999;"  ></textarea>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="submit" type="primary" size="default" loading="true"
+        disabled="false" bindtap="default" hover-class="none"> 保存</button>
+</view>
+

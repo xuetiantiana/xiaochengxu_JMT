@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/cpage/login/login",
+    "pages/cpage/user/user",
+    "pages/cpage/resume/resume",
+    "pages/cpage/edit_progectExpre/edit_progectExpre",
+    "pages/cpage/edit_workExper/edit_workExper",
+    "pages/cpage/edit_introMyself/edit_introMyself",
+    "pages/cpage/edit_jobIntention/edit_jobIntention",
+    "pages/cpage/index/index",
+    "pages/cpage/jobDetail/jobDetail",
+    "pages/cpage/company/company",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/cpage/edit_baseInfor/edit_baseInfor",
+    "pages/cpage/edit_eduExpre/edit_eduExpre",
+    "pages/cpage/edit_skill/edit_skill",
+    "pages/cpage/webview/webview"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/cpage/index/index",
+        "text": "首页",
+        "iconPath": "images/tab11.png",
+        "selectedIconPath": "images/tab01.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "职位搜索",
+        "iconPath": "images/tab22.png",
+        "selectedIconPath": "images/tab02.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab33.png",
+        "selectedIconPath": "images/tab03.png"
+      },
+      {
+        "pagePath": "pages/cpage/user/user",
+        "text": "我的",
+        "iconPath": "images/tab11.png",
+        "selectedIconPath": "images/tab01.png"
+      }
+    ],
+    "color": "#333333",
+    "selectedColor": "#00c9a9"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,39 @@
+/* pages/cpage/company/company.wxss */
+.jobBox{margin:0 20rpx}
+.jobBox_item{background: #fff;padding:20rpx 30rpx;margin-top:20rpx;border-radius: 10rpx}
+.jobBox_1 .jobNmae{font-size: 40rpx;line-height: 2;color:#000}
+.jobBox_1 .jobNeed{color:#666;font-size: 28rpx;line-height: 2}
+.jobBox_1 .jobStar{color:#666;font-size: 28rpx;line-height: 2}
+.jobBox_1 .jobNeed text{
+  border:1px solid #eee;margin-right: 20rpx;padding:0rpx 15rpx;border-radius: 18rpx;
+}
+.jobBox_1 .jobNeed text.salary{
+  font-size: 36rpx;color:#ff4231;border:none;padding:0;
+}
+.jobBox_1 .company{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding:20rpx 0 10rpx 
+}
+.jobBox_1 .company .company_left{width: 30%;}
+.jobBox_1 .company .company_left image{width: 90%}
+.jobBox_1 .company .company_right{width: 70%;line-height: 2}
+.jobBox_1 .company .company_right view:nth-child(1){color:#000;font-size: 32rpx}
+.jobBox_1 .company .company_right view:nth-child(2){color:#666;font-size:24rpx}
+.jobIntro_ul .jobIntro_li{margin-bottom:10rpx}
+.jobIntro_ul .jobIntro_li .tit_{
+  font-size: 32rpx;
+  padding:10rpx 0;
+  color:#000;
+}
+.jobIntro_ul .jobIntro_li .content_{
+  color:#666;line-height: 1.8
+}
+
+.goMap{float: right;color:#00c9a9}
+.job_Box .tit{font-size: 36rpx;color:#00c9a9;margin-bottom: 20rpx}
+.job_Box .tab_job .tab_span{height: 50rpx;border:1px solid #ccc;padding:0 30rpx;line-height: 50rpx;border-radius: 50rpx;margin-right: 10rpx;display: inline-block;font-size: 24rpx}
+.job_Box .tab_job .tab_span.on{border-color: #00c9a9;color: #00c9a9}
+.job_ul .job_li{margin:15rpx 0 0;padding:20rpx 0 20rpx;border-top:1px solid #f5f5f5}

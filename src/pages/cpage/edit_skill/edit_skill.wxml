@@ -1,0 +1,28 @@
+<!--pages/cpage/edit_skill/edit_skill.wxml-->
+<view class="container">
+  <view>
+    
+    <view class='input_box'>
+      <view>
+        <view class="left">技能名称</view>
+        <view class="right">
+          <input type="text" value='技能名称' placeholder='请输入技能名称'/>
+        </view>
+      </view>
+    </view>
+    <view class='input_box input_box_1'>
+      <view>
+        <view class="left">熟练度</view>
+        <view class="bottom" style='width:80%!important;margin:0 auto;padding-bottom:30rpx'>
+          <slider value='50' bindchange="slider2change" step="5" block-size="20" style=''  style='margin:0;width:80%;display:inline-block;margin-right:40rpx'/>
+            <text>熟练</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="submit" type="primary" size="default" loading="true"
+        disabled="{{disabled}}" bindtap="default" hover-class="none"> 保存  </button>
+        <button class="del" type="default" size="default"
+        disabled="{{disabled}}" bindtap="default" hover-class="none">删除  </button>
+</view>
+

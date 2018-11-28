@@ -1,0 +1,39 @@
+<!--pages/cpage/index/index.wxml-->
+<view class='container'>
+  <view>
+    <swiper class="bannerSwiper" indicator-dots="true"
+      autoplay="true" interval="5000" duration="500" indicator-color="rgba(0,0,0,.2)" indicator-active-color="rgba(0,0,0,.6)">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="widthFix"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view>
+    <view class="job_ul">
+      <block wx:for="{{jobList}}">
+      <navigator  url="/pages/cpage/jobDetail/jobDetail" hover-class="none">
+        <view class="job_li">
+          <view class="li_left">
+            <image src="{{item.img}}" mode="widthFix" ></image>
+          </view>
+          <view class="li_center">
+            <view class="job_name">web前端</view>
+            <view>北京前程未来有限公司</view>
+            <view class="">
+              <text>北京</text><text>3-5年</text><text>本科</text>
+            </view>
+          </view>
+          <view class="li_right">
+            <view>10k-15k</view>
+            <view class="time">4天前</view>
+          </view>
+        </view>
+      </navigator>
+      </block>
+    </view>
+    <view class="loadMore">加载更多</view>
+  </view>
+</view>  
+

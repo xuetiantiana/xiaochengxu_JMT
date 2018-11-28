@@ -1,0 +1,24 @@
+/* pages/cpage/resume/resume.wxss */
+.container{padding-bottom: 50rpx}
+.resumeUl .resumeLi{background: #fff;margin-top: 30rpx;line-height: 1.8}
+.resumeUl .resumeLi .name{font-size:40rpx;color:#333;}
+.resumeUl .resumeLi .name text{font-size: 28rpx;color:#333}
+.resumeUl .resumeLi .pic image{border-radius: 50%}
+.resumeUl .resumeLi .pic{position: absolute;right: 30rpx;top:30rpx}
+.resumeUl .resumeLi.baseInformation{position: relative;padding:30rpx}
+.resumeUl .resumeLi.baseInformation .green{color: #00c9a9;margin-left:30rpx;float: none}
+.iconText{padding-left:35rpx;background:url(http://127.0.0.1:8000/static/images/icon_8.png) no-repeat left center;background-size: 20rpx auto}
+.phone{margin-top:20rpx}
+.resumeUl .resumeLi .tit{padding:10rpx 30rpx;font-size: 32rpx;color:#333;background: #fafafa;font-weight: bold}
+.resumeUl .resumeLi .content{padding:20rpx 30rpx;line-height: 1.8}
+.ul_ .li_> view:nth-child(1){color:#00c9a9;font-size: 32rpx}
+.green text{color:#00c9a9!important}
+.green{font-weight: normal;display: inline-block;color:#00c9a9;float: right;font-size: 28rpx;padding-left:35rpx;background: url(http://127.0.0.1:8000/static/images/icon_21.png) no-repeat left center;background-size: 28rpx}
+ navigator{display: inline-block}
+.ul_ .li_{border-bottom: 1px dotted #eee;padding:0rpx 0 20rpx;margin-bottom: 20rpx}
+.ul_ .li_:last-child{border: none;margin-bottom: 0}
+.ul_ .li_ .precent > text:nth-child(1){
+  width:20%;display:inline-block;text-align:right;margin-right:20rpx
+}
+.ul_ .li_ .precent slider{width:40%;display:inline-block;margin:0 40rpx 0 0}.add{text-align: center;border-top:1px solid #f5f5f5;line-height: 80rpx;color:#00c9a9}
+.add text{padding-left:40rpx;background: url(http://127.0.0.1:8000/static/images/icon_20.png) no-repeat left center;background-size: 30rpx}

@@ -1,0 +1,84 @@
+<!--pages/cpage/edit_workExper/edit_workExper.wxml-->
+<!--pages/cpage/edit_jobIntention/edit_jobIntention.wxml-->
+<view class="container">
+  <view>
+    <view class='input_box'>
+      <view>
+        <view class="left">公司名称</view>
+        <view class="right">
+          <input type="text" value='公司名称' placeholder='请输入公司名称'/>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">岗位类型</view>
+        <view class="right">
+          
+          <picker bindchange="jobsitePickerChange" value="{{jobsite_index}}" range="{{jobsite_array}}">
+            <view class="picker">
+              {{jobsite_array[jobsite_index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">职位名称</view>
+        <view class="right">
+          <input type="text" value='职位名称' placeholder='请输入职位名称'/>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">所在城市</view>
+        <view class="right">
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+            <view class="picker">
+              {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">开始时间</view>
+        <view class="right">
+          <picker mode="date" value="{{startTime}}"  bindchange="startTimeChange" end="{{startTimeMax}}">
+            <view class="picker">
+              {{startTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">结束时间</view>
+        <view class="right">
+          <picker mode="date" value="{{endTime}}"  bindchange="endTimeChange" start="{{endTimeMin}}">
+            <view class="picker">
+              {{endTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box input_box_1'>
+      <view>
+        <view class="left">工作内容</view>
+        <view class="bottom">
+          <textarea placeholder="请输入工作内容" placeholder-style="color:#999;"  ></textarea>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="submit" type="primary" size="default" loading="true"
+        disabled="{{disabled}}" bindtap="default" hover-class="none"> 保存  </button>
+        <button class="del" type="default" size="default"
+        disabled="{{disabled}}" bindtap="default" hover-class="none">删除  </button>
+</view>
+

@@ -1,0 +1,3 @@
+/* pages/cpage/index/index.wxss */
+.bannerSwiper{width: 750rpx;}
+.bannerSwiper image{width: 100%}

@@ -1,0 +1,71 @@
+<!--pages/cpage/jobDetail/jobDetail.wxml-->
+<view class='container'>
+  <view class="jobBox">
+    <view class="jobBox_item jobBox_1">
+      <view class="jobNmae">web前端</view>
+      <view class="jobNeed">
+        <text class="salary">12-13k</text>
+        <text>北京</text>
+        <text>2-5年</text>
+        <text>本科</text>
+      </view>
+      <view class="jobStar"><text>五险一金</text><text>五险一金</text></view>
+      <view class="company">
+        <view class='company_left'><image src='https://cdn.jiemodui.com/img/Public/Uploads/Edit/2017/08/371903865ac21f723657f4ce9ae58058.jpg' mode="widthFix"></image></view>
+        <view class='company_right'>
+          <navigator url="/pages/cpage/company/company" hover-class="none">
+            <view>北京前程未来科技有限公司</view>
+            <view>互联网/50-150人/</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class='jobBox_item jobBox_2'>
+      <view class="jobIntro_ul">
+        <view class='jobIntro_li'>
+          <view class='tit_'>职位描述</view>
+          <view class='content_'>岗位职责：
+                1.标准化的教案及教学流程的学习和实施，帮助儿童提高情商能力，改善日常行为；
+                2.组织学员进行游戏、活动等情商训练；
+                3.有较强沟通交流能力和专业素养，学员家长的定期互动沟通，疑问解答；
+                4.公司活动参与和配合。
+          </view>
+        </view>
+        <view class='jobIntro_li'>
+          <view class='tit_'>职位要求</view>
+          <view class='content_'>岗位职责：
+                1.标准化的教案及教学流程的学习和实施，帮助儿童提高情商能力，改善日常行为；
+                2.组织学员进行游戏、活动等情商训练；
+                3.有较强沟通交流能力和专业素养，学员家长的定期互动沟通，疑问解答；
+                4.公司活动参与和配合。
+          </view>
+        </view>
+        <view class='jobIntro_li'>
+          <view class='tit_'>技能要求</view>
+          <view class='content_'>岗位职责：
+                1.标准化的教案及教学流程的学习和实施，帮助儿童提高情商能力，改善日常行为；
+                2.组织学员进行游戏、活动等情商训练；
+                3.有较强沟通交流能力和专业素养，学员家长的定期互动沟通，疑问解答；
+                4.公司活动参与和配合。
+          </view>
+        </view>
+        <view class='jobIntro_li'>
+          <view class='tit_'>工作地点</view>
+          <view class='content_'>
+            <view>福田区彩田路平安国际酒店27楼 <text class="goMap" bindtap='openMap'>查看地图</text></view>
+          </view>
+        </view>
+       
+      </view>
+    </view>
+  </view>
+  <!-- 底部定位开始 -->
+  <view class="fixedBtn">
+    <view class="tabList">
+      <view class="share">分享</view>
+      <view class="collect">收藏</view>
+      <view class="sendResume" bindlongtap='sendResume'>投递简历</view>
+    </view>   
+  </view>
+   <!-- 底部定位结束 -->
+</view>

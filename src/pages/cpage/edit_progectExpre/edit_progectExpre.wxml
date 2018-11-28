@@ -1,0 +1,62 @@
+<!--pages/cpage/edit_progectExpre/edit_progectExpre.wxml-->
+<!--pages/cpage/edit_workExper/edit_workExper.wxml-->
+<!--pages/cpage/edit_jobIntention/edit_jobIntention.wxml-->
+<view class="container">
+  <view>
+    <view class='input_box'>
+      <view>
+        <view class="left">项目名称</view>
+        <view class="right">
+          <input type="text" value='项目名称' placeholder='请输入项目名称'/>
+        </view>
+      </view>
+    </view>
+    
+    <view class='input_box'>
+      <view>
+        <view class="left">担任职责</view>
+        <view class="right">
+          <input type="text" value='担任职责' placeholder='请输入担任职责'/>
+        </view>
+      </view>
+    </view>
+    
+    <view class='input_box'>
+      <view>
+        <view class="left">开始时间</view>
+        <view class="right">
+          <picker mode="date" value="{{startTime}}"  bindchange="startTimeChange" end="{{startTimeMax}}">
+            <view class="picker">
+              {{startTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box'>
+      <view>
+        <view class="left">结束时间</view>
+        <view class="right">
+          <picker mode="date" value="{{endTime}}"  bindchange="endTimeChange" start="{{endTimeMin}}">
+            <view class="picker">
+              {{endTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='input_box input_box_1'>
+      <view>
+        <view class="left">项目描述</view>
+        <view class="bottom">
+          <textarea placeholder="请输入项目描述" placeholder-style="color:#999;"  ></textarea>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="submit" type="primary" size="default" loading="true"
+        disabled="{{disabled}}" bindtap="default" hover-class="none"> 保存  </button>
+        <button class="del" type="default" size="default"
+        disabled="{{disabled}}" bindtap="default" hover-class="none">删除  </button>
+</view>
+

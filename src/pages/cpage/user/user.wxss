@@ -1,0 +1,6 @@
+/* pages/cpage/user/user.wxss */
+.userpic{font-size: 36rpx;background: #00c9a9;color:#fff;text-align: center;padding:60rpx 0}
+.userpic image{border-radius: 50%;margin:0rpx 0 10rpx;width: 180rpx}
+.user_ul .user_li{border-bottom:1px solid #f5f5f5;line-height: 120rpx;padding:0 30rpx 0 100rpx;color:#333;font-size: 32rpx;background: url(http://127.0.0.1:8000/static/images/icon_31.png) no-repeat 35rpx center;background-size: 35rpx;background-color: #fff}
+.user_ul .user_li >view{background: url(http://127.0.0.1:8000/static/images/icon_32.png) no-repeat right center;background-size: 40rpx;background-color: #fff}
+.right_{float: right;color:#999;font-size: 28rpx;margin-right: 50rpx}
