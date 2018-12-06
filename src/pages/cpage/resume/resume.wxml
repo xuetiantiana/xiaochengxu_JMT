@@ -25,7 +25,7 @@
     <view class='resumeLi'>
       <view class='tit'>自我描述<navigator class="green" url="/pages/cpage/edit_introMyself/edit_introMyself" hover-class="none"><text >编辑</text></navigator></view>
       <view class="content">
-        <view>1、熟练掌握HTML5和Css3
+        <text>1、熟练掌握HTML5和Css3
           2、精通javascript
           3、精通Ajax,完成数据交互
           4、精通响应式布局和弹性盒，兼容多个终端。
@@ -33,7 +33,7 @@
           6、熟练使用微信小程序API进行微信小程序开发。
           7、熟练掌握Jquery，zepto，swiper，iscroll，jq-waterfall等
           8、熟悉 vue+webpack+element-UI实现模块化开发
-        </view>
+        </text>
       </view>
     </view>
     <!-- 自我描述end -->

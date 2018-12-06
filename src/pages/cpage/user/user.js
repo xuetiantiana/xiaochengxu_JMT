@@ -1,11 +1,13 @@
 // pages/cpage/user/user.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    userData:"88",
+    
   },
 
   /**
@@ -27,6 +29,7 @@ Page({
    */
   onShow: function () {
     console.log("show")
+   
   },
 
   /**

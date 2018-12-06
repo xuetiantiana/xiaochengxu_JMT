@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/cpage/login/login",
+    "pages/cpage/search/search",
     "pages/cpage/user/user",
+    "pages/cpage/login/login",
     "pages/cpage/resume/resume",
     "pages/cpage/edit_progectExpre/edit_progectExpre",
     "pages/cpage/edit_workExper/edit_workExper",
@@ -16,6 +17,7 @@
     "pages/cpage/edit_eduExpre/edit_eduExpre",
     "pages/cpage/edit_skill/edit_skill",
     "pages/cpage/webview/webview"
+    
   ],
   "tabBar": {
     "list": [
@@ -26,16 +28,10 @@
         "selectedIconPath": "images/tab01.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/cpage/search/search",
         "text": "职位搜索",
         "iconPath": "images/tab22.png",
         "selectedIconPath": "images/tab02.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "images/tab33.png",
-        "selectedIconPath": "images/tab03.png"
       },
       {
         "pagePath": "pages/cpage/user/user",

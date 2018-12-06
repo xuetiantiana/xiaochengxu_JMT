@@ -1,11 +1,12 @@
 // pages/cpage/resume/resume.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgPic:"https://cdn.jiemodui.com/img/Public/Uploads/icon/201811/5be12ce0bcfcc.png320_240.jpg"
+    imgPic:"https://cdn.jiemodui.com/img/Public/Uploads/icon/201811/5be12ce0bcfcc.png320_240.jpg",
   },
   choseImg:function(){
     let that = this;
@@ -73,7 +74,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      userIntro: app.globalData.userIntro
+    })
   },
 
   /**

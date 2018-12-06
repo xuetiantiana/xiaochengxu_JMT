@@ -1,4 +1,5 @@
 // pages/cpage/edit_introMyself/edit_introMyself.js
+const app = getApp()
 Page({
 
   /**
@@ -14,7 +15,11 @@ Page({
   onLoad: function (options) {
 
   },
-
+  textareaBlur:function(e){
+    //console.log(e.detail.value)
+    // var intro = e.detail.value.replace(/\n/g, '\n')
+    // console.log(intro)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

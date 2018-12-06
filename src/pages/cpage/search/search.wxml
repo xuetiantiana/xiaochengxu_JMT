@@ -1,0 +1,54 @@
+<!--pages/cpage/search/search.wxml-->
+<view class='container'>
+  <view class="searchBox">
+    <view class='cityBox'>全国</view>
+    <view class='inutBox'>
+      <input placeholder='请输入职位，公司等' type='text'confirm-type='search'  bindconfirm="serch" bindinput="bindKeyInput" value="{{inputValue}}"/>
+      <view class="searchBtn" bindtap='inputSearch'></view>
+    </view>
+  </view>
+  <!-- 职位列表 -->
+  <view style="display:{{jobYes ? 'block' : 'none' }}">
+    <view class="job_ul">
+      <block wx:for="{{jobList}}">
+      <navigator  url="/pages/cpage/jobDetail/jobDetail" hover-class="none">
+        <view class="job_li">
+          <view class="li_left">
+            <image src="{{item.img}}" mode="widthFix" ></image>
+          </view>
+          <view class="li_center">
+            <view class="job_name">web前端</view>
+            <view>北京前程未来有限公司</view>
+            <view class="">
+              <text>北京</text><text>3-5年</text><text>本科</text>
+            </view>
+          </view>
+          <view class="li_right">
+            <view>10k-15k</view>
+            <view class="time">4天前</view>
+          </view>
+        </view>
+      </navigator>
+      </block>
+    </view>
+    <view class="loadMore">加载更多</view>
+  </view>
+  <!-- 热门搜索 -->
+  <view class="searchTabBox" style="display:{{jobYes ? 'none' : 'block' }}">
+    <view>
+      <view class='tit'>热门搜索</view>
+      <view class="hot_ul">
+        <view class="hot_li" wx:for="{{hot_ul}}" data-value='{{item}}' bindtap='hotSearch'>{{item}}</view>
+        
+      </view>
+    </view>
+    <view class='tit'>
+      <view>历史搜索</view>
+      <view class="history_ul">
+        <view class="history_li" wx:for="{{history}}" data-value='{{item}}' bindtap='hotSearch'>{{item}}<text bindtap='remove' data-value='{{item}}'>删除</text></view>
+        
+        
+      </view>
+    </view>
+  </view>
+</view>

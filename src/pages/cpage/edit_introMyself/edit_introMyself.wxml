@@ -5,7 +5,7 @@
       <view>
         <view class="left">自我描述</view>
         <view class="bottom">
-          <textarea placeholder="请输入自我描述" placeholder-style="color:#999;"  ></textarea>
+          <textarea placeholder="请输入自我描述" placeholder-style="color:#999;" bindblur="textareaBlur" ></textarea>
         </view>
       </view>
     </view>

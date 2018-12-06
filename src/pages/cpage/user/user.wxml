@@ -1,13 +1,17 @@
 <!--pages/cpage/user/user.wxml-->
 <view class="container">
   <view class="userpic">
-    <view><image src="https://cdn.jiemodui.com/img/Public/Uploads/icon/201811/5be12ce0bcfcc.png320_240.jpg" mode='widthFix'></image></view>
-    <view>薛甜甜</view>
+    <navigator url="{{userData=='' ? '/pages/cpage/login/login' : ''}}" hover-class="none">
+      <view>
+        <image src="{{userData=='' ? 'https://cdn.jiemodui.com/img/mingming/jiemodui/PicJobpersonal.png' : 'https://cdn.jiemodui.com/img/Public/Uploads/icon/201811/5be12ce0bcfcc.png320_240.jpg'}}" mode='widthFix'></image>
+        </view>
+      <view>{{userData == '' ? '请登录' : '薛甜甜'}}</view>
+    </navigator>
   </view>
   <view class="user_ul">
     <view class="user_li">
       <view>
-        <navigator url="/pages/cpage/resume/resume" hover-class="none">我的在线简历</navigator>
+        <navigator url="{{userData=='' ? '/pages/cpage/login/login' : '/pages/cpage/resume/resume'}}" hover-class="none">我的在线简历</navigator>
       </view>
     </view>
     <view class="user_li">
@@ -15,29 +19,36 @@
         <text>我的简历附件</text>
         <navigator class="right_" style='display:none'>请上传简历附件</navigator>
         <view class="right_">
-          <navigator hover-class="none" style='display:inline-block;color:#00c5c5'>薛甜甜.docx</navigator>
-          <text style='margin-left:30rpx'>删除</text>
+          <view wx:if="{{userData != ''}}">
+            <navigator hover-class="none" style='display:inline-block;color:#00c5c5'>薛甜甜.docx</navigator>
+            <text style='margin-left:30rpx'>删除</text>
+          </view>
         </view>
       </view>
     </view>
     <view class="user_li">
       <view>
-        <navigator url="/pages/cpage/webview/webview" hover-class="none">
+        <navigator url="{{userData=='' ? '/pages/cpage/login/login' : '/pages/cpage/webview/webview'}}" hover-class="none">
           <text>上传简历附件</text>
           <text class='right_'>只能上传一份</text>
         </navigator>
       </view>
     </view>
     <view class="user_li">
-      <view>我的收藏</view>
-    </view>
-    <view class="user_li">
-      <view>我的投递</view>
+      <view>
+        <navigator url="{{userData=='' ? '/pages/cpage/login/login' : '/pages/cpage/resume/resume'}}" hover-class="none">我的收藏</navigator>
+      </view>
     </view>
     <view class="user_li">
       <view>
-        <navigator>意见反馈</navigator>
+         <navigator url="{{userData=='' ? '/pages/cpage/login/login' : '/pages/cpage/resume/resume'}}" hover-class="none">我的投递</navigator>
+      </view>
+    </view>
+    <view class="user_li">
+      <view>
+        <navigator url="{{userData=='' ? '/pages/cpage/login/login' : '/pages/cpage/resume/resume'}}" hover-class="none">意见反馈</navigator>
       </view>
     </view>
   </view>
+  <view style='text-align:center;margin:50rpx 0 50rpx'>退出登录</view>
 </view>
